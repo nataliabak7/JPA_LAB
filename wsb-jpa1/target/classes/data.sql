@@ -13,11 +13,11 @@ INSERT INTO DOCTOR (id, first_name, last_name, email, telephone_number, doctor_n
 (4, 'Maria', 'Lewandowska', 'maria.lewandowska@example.com', '444555666', 'D004', 'DERMATOLOGIST', 4);
 
 -- Wstawianie pacjentów
-INSERT INTO PATIENT (id, first_name, last_name, email, telephone_number, patient_number, date_of_birth, address_id) VALUES
-(1, 'Adam', 'Jankowski', 'adam.jankowski@example.com', '600700800', 'P001', '1985-03-15', 1),
-(2, 'Ewa', 'Kaczmarek', 'ewa.kaczmarek@example.com', '700800900', 'P002', '1992-07-22', 2),
-(3, 'Tomasz', 'Lis', 'tomasz.lis@example.com', '800900000', 'P003', '1978-11-05', 3),
-(4, 'Karolina', 'Zawadzka', 'karolina.zawadzka@example.com', '900000111', 'P004', '2000-01-30', 4);
+INSERT INTO PATIENT (id, first_name, last_name, email, telephone_number, patient_number, date_of_birth, address_id, age) VALUES
+(1, 'Adam', 'Jankowski', 'adam.jankowski@example.com', '600700800', 'P001', '1985-03-15', 1,39),
+(2, 'Ewa', 'Kaczmarek', 'ewa.kaczmarek@example.com', '700800900', 'P002', '1992-07-22', 2,32),
+(3, 'Tomasz', 'Lis', 'tomasz.lis@example.com', '800900000', 'P003', '1978-11-05', 3,25),
+(4, 'Karolina', 'Zawadzka', 'karolina.zawadzka@example.com', '900000111', 'P004', '2000-01-30', 4, 41);
 
 -- Wstawianie wizyt
 INSERT INTO VISIT (id, doctor_id, patient_id, time, description) VALUES

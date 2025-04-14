@@ -24,7 +24,7 @@ public class PatientService {
     }
 
     public PatientTO getPatientById(Long id) {
-        return patientRepository.findById(id)
+        return patientRepository.findById(id) //findByIdWithVisits(id)//
                 .map(PatientMapper::mapToTO)
                 .orElse(null);
     }

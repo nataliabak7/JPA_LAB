@@ -27,5 +27,40 @@ public class PatientTO {
         this.age = age;
         this.visits = visits;
     }
+    public Long getId() {
+        return id;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getTelephoneNumber() {
+        return telephoneNumber;
+    }
+
+    public String getPatientNumber() {
+        return patientNumber;
+    }
+
+    public LocalDate getDateOfBirth() {
+        return dateOfBirth;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public List<VisitTO> getVisits() {
+        return visits;
+    }
 
 }

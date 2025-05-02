@@ -39,6 +39,9 @@ public class PatientEntity {
 	@Column(nullable = false)
 	private int age = 0;
 
+	@Column(name = "registration_date", nullable = false)
+	private LocalDate registrationDate;
+
 	// Gettery i Settery
 
 	public Long getId() {
@@ -119,5 +122,13 @@ public class PatientEntity {
 
 	public void setAge(int age) {
 		this.age = age;
+	}
+
+	public LocalDate getRegistrationDate() {
+		return registrationDate;
+	}
+
+	public void setRegistrationDate(LocalDate registrationDate) {
+		this.registrationDate = registrationDate;
 	}
 }
